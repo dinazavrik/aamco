@@ -1,0 +1,98 @@
+.cols{
+  padding-top: rem-calc(146);
+  @include breakpoint(xs){
+    padding-top: rem-calc(30);
+  }
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1120);
+    position: relative;
+  }
+  &__first{
+    @include flex-grid-column(6);
+    border-right: 1px solid #cccccc;
+    padding-right: rem-calc(148);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      border-right: 0;
+      padding-right: 0;
+      margin-bottom: rem-calc(30);
+    }
+  }
+  &__second{
+    @include flex-grid-column(6);
+    padding-left: rem-calc(120);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      padding-left: 0;
+    }
+  }
+  &__first-title{
+    text-align: center;
+    font-size: rem-calc(26);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+  }
+  &__first-sub-title{
+    margin-bottom: rem-calc(36);
+    text-align: center;
+    color: $m-grey_color;
+    font-family: $title-font-family;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    line-height: rem-calc(24);
+  }
+  &__first-txt{
+    text-align: center;
+  }
+  &__first-inp{
+    color: $l-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    padding: 10px 70px 10px 10px;
+    border: 1px solid $blue-color;
+    border-radius: rem-calc(4);
+    &--one{
+      padding: 10px 20px 10px 20px;
+      background-color: $blue-color;
+      color: $white-color;
+      @include breakpoint(xs){
+        margin-top: rem-calc(10);
+      }
+    }
+    @include breakpoint(xs){
+      width: 100%;
+    }
+  }
+  &__first-inp:focus{
+    outline: 0;
+  }
+  &__first-inp--one:hover{
+    background-color: $white-color;
+    color: $blue-color;
+    cursor: pointer;
+  }
+  &__second-soc{
+    text-align: center;
+  }
+  &__first-sub-text{
+    color: #9a9999;
+    font-family: $title-font-family;
+    font-size: rem-calc(24);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    background-color: $white-color;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+}

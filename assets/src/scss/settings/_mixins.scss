@@ -1,0 +1,47 @@
+//Foundation Breakpoints
+@mixin breakpoint($point) {
+  /* Small only */
+  @if $point == xs {
+    @media screen and (max-width: 39.9375em) {
+      @content;
+    }
+  }
+    /* Medium and up */
+  @else if $point == sm {
+    @media screen and (min-width: 40em) {
+      @content;
+    }
+  }
+    /* Medium only */
+  @else if $point == tb {
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      @content;
+    }
+  }
+    /* Large and up */
+  @else if $point == md {
+    @media screen and (min-width: 64em) {
+      @content;
+    }
+  }
+    /* Large only */
+  @else if $point == desktop {
+    @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+      @content;
+    }
+  }
+}
+
+//Background image
+@mixin bg-img($url) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
+
+
+
+

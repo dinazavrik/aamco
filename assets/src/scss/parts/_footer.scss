@@ -1,0 +1,104 @@
+.footer{
+  background-color: $blue-color;
+  margin-top: rem-calc(114);
+  @include breakpoint(xs){
+    margin-top: rem-calc(40);
+  }
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(920);
+    @include breakpoint(xs){
+      justify-content: center;
+    }
+  }
+  &__items-title{
+    color: $white-color;
+    font-family: $main-font-family;
+    font-size: rem-calc(16);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    margin-bottom: rem-calc(19);
+    &--cn{
+      text-align: center;
+    }
+  }
+  &__cols{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: rem-calc(70);
+    list-style: none;
+  }
+  &__cols-link{
+    color: $white-color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    line-height: rem-calc(21);
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease;
+  }
+  &__cols-link:hover{
+    color: #f1a7a7;
+  }
+  &__cols-item{
+    margin-bottom: rem-calc(20);
+  }
+  &__block{
+    padding-top: rem-calc(40);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include breakpoint(xs){
+      padding-top: rem-calc(20);
+    }
+  }
+  &__logo{
+    margin-right: rem-calc(106);
+    @include breakpoint(xs){
+      margin-right: 0;
+      margin-bottom: rem-calc(20);
+    }
+  }
+  &__items{
+    margin-right: rem-calc(49);
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+  &__line{
+    width: 100%;
+    color: $white-color;
+    margin-bottom: rem-calc(30);
+  }
+  &__social{
+    padding-bottom: rem-calc(30);
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__item{
+    margin-right: rem-calc(57);
+    @include breakpoint(xs){
+      margin-right: rem-calc(15);
+    }
+  }
+  &__item:last-child{
+    margin-right: 0;
+  }
+  &__link{
+    color: $white-color;
+    font-size: rem-calc(18);
+    transition: all .3s ease;
+  }
+  &__link:hover{
+    color: #f1a7a7;
+  }
+}

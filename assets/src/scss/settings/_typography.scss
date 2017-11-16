@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900');
+
+/*Global Variables*/
+$main-font-family: 'Open Sans', sans-serif;
+$title-font-family: 'Roboto', sans-serif;
+
+h1, h2, h3{
+  margin-top: 0;
+  font-family: $title-font-family;
+  color: $blue-color;
+}
+
+p {
+  margin-top: 0;
+}

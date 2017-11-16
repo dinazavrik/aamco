@@ -1,0 +1,239 @@
+.two-cols{
+  padding-top: rem-calc(35);
+  &__row{
+    @include flex-grid-column(12, 15);
+    @include flex-grid-row;
+    max-width: rem-calc(1120);
+  }
+  &__title{
+    margin-bottom: rem-calc(46);
+    text-align: center;
+    font-size: rem-calc(34);
+    font-weight: 500;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    @include breakpoint(xs){
+      margin-bottom: rem-calc(25);
+      font-size: rem-calc(20);
+    }
+  }
+  &__first{
+    @include flex-grid-column(6);
+    border-right: 1px solid #cccccc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      border-right: none;
+    }
+  }
+  &__second{
+    @include flex-grid-column(6);
+    padding-left: rem-calc(36);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+      padding-left: 0;
+    }
+  }
+  &__first-bone-title{
+    margin-bottom: rem-calc(9);
+    font-size: rem-calc(18);
+    font-weight: 500;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    &--marg{
+      margin-bottom: 0;
+    }
+  }
+  &__first-bone{
+    @include flex-grid-column(6);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+    }
+  }
+  &__first-bone-inp{
+    color: $l-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    padding: rem-calc(10) rem-calc(17);
+    width: 80%;
+    border: 1px solid $blue-color;
+    border-radius: rem-calc(4);
+    @include breakpoint(xs){
+      width: 100%;
+    }
+  }
+  &__first-bone-inp:focus{
+    outline: 0;
+  }
+  &__first-bone-txt{
+    position: relative;
+    &--mg{
+      margin-bottom: rem-calc(30);
+    }
+  }
+  &__first-bone-txt--date:after{
+    content: url('img/vector-smart-object.png');
+    position: absolute;
+    top: rem-calc(12);
+    right: rem-calc(70);
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+  &__first-bone-txt--time:after{
+    content: url('img/time.png');
+    position: absolute;
+    top: rem-calc(12);
+    right: rem-calc(70);
+    @include breakpoint(xs){
+      display: none;
+    }
+  }
+  &__first-btwo{
+    @include flex-grid-column(6);
+    @include breakpoint(xs){
+      @include flex-grid-column(12);
+    }
+  }
+  &__first-btwo-sub-title{
+    margin-bottom: rem-calc(16);
+    color: $m-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+  }
+  &__first-btwo-txt{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: $d-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    margin-bottom: rem-calc(27);
+  }
+  &__first-btwo-inp{
+    width: rem-calc(19);
+    height: rem-calc(19);
+    margin-right: rem-calc(4);
+    cursor: pointer;
+  }
+  &__first-btwo-inp:focus{
+    outline: 0;
+  }
+  &__first-bone-from{
+    margin-bottom: rem-calc(30);
+    &--pad{
+      padding-top: rem-calc(33);
+    }
+  }
+  &__first-bone-text{
+    margin-bottom: 0;
+    color: $m-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    text-transform: uppercase;
+    &--col{
+      color: $d-grey_color;
+      margin-bottom: rem-calc(19);
+    }
+  }
+  &__second-title{
+    margin-bottom: rem-calc(9);
+    font-size: rem-calc(18);
+    font-weight: 500;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    &--mg{
+      margin-bottom: rem-calc(9);
+    }
+  }
+  &__second-inp{
+    padding: rem-calc(14) rem-calc(17);
+    color: $d-grey_color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    text-transform: uppercase;
+    border: 1px solid $blue-color;
+    border-radius: rem-calc(4);
+    &--pd{
+      padding: rem-calc(12.5) rem-calc(17);
+    }
+    &--wd{
+      width: 85%;
+      @include breakpoint(xs){
+        width: 100%;
+      }
+    }
+    &--wdt{
+      width: 100%;
+    }
+  }
+  &__second-inp:focus{
+    outline: 0;
+  }
+  &__second-txt-bl{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: rem-calc(30);
+    &--bt{
+      justify-content: space-between;
+    }
+    @include breakpoint(xs){
+      flex-direction: column;
+    }
+  }
+  &__second-txt{
+   &--wdt{
+     width: 50%;
+     @include breakpoint(xs){
+       width: 100%;
+     }
+   }
+    &--mg{
+      margin-bottom: rem-calc(30);
+    }
+  }
+  &__second-btn{
+    color: $blue-color;
+    font-family: $main-font-family;
+    font-size: rem-calc(13);
+    font-weight: 400;
+    line-height: rem-calc(24);
+    text-transform: uppercase;
+    background: transparent;
+    padding: rem-calc(10) rem-calc(40);
+    border: 1px solid $blue-color;
+    border-radius: rem-calc(4);
+    transition: all .3s ease;
+    &--cl{
+      color: $white-color;
+      background-color: #1d3f6f;
+    }
+    @include breakpoint(xs){
+      width: 100%;
+    }
+  }
+  &__second-btn:hover{
+    cursor: pointer;
+    color: $white-color;
+    background-color: #1d3f6f;
+  }
+  &__second-btn--cl:hover{
+    color: $blue-color;
+    background: transparent;
+  }
+  &__second-btn:focus{
+    outline: 0;
+  }
+}

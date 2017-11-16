@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+  font-size: 100%;
+  @include breakpoint(xs){
+    font-size: 80%;
+  }
+}
+
+
